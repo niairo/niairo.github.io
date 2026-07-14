@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" data-theme="auto" class="i18n-pending">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Robert RYAN is a senior web designer creating accessible, thoughtful digital experiences across UX, design systems, WordPress and front-end development.">
+  <meta name="theme-color" content="#f4f2ed" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0e12" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Robert RYAN — Web Designer">
+  <meta property="og:description" content="Accessible digital experiences where creativity, usability and front-end expertise meet.">
+  <meta property="og:image" content="assets/social-preview.jpg">
+  <meta property="og:url" content="https://oriaingraphics.com/">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Robert RYAN — Web Designer">
+  <meta name="twitter:description" content="Accessible digital experiences where creativity, usability and front-end expertise meet.">
+  <meta name="twitter:image" content="assets/social-preview.jpg">
+  <link rel="canonical" href="https://oriaingraphics.com/">
+  <link rel="alternate" hreflang="en" href="https://oriaingraphics.com/?lang=en">
+  <link rel="alternate" hreflang="fr" href="https://oriaingraphics.com/?lang=fr">
+  <link rel="alternate" hreflang="x-default" href="https://oriaingraphics.com/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Resolve the language before rendering to prevent a flash of another language. */
+    (() => {
+      const query = new URLSearchParams(location.search).get('lang');
+      const explicit = query === 'fr' || query === 'en' ? query : null;
+      let stored = null;
+      try { stored = localStorage.getItem('language'); } catch (error) { /* Storage may be unavailable in privacy modes. */ }
+      const browserLanguages = navigator.languages?.length ? navigator.languages : [navigator.language || 'en'];
+      const browser = browserLanguages.some(language => language.toLowerCase().startsWith('fr')) ? 'fr' : 'en';
+      window.initialLanguage = explicit || (stored === 'fr' || stored === 'en' ? stored : browser);
+      document.documentElement.lang = window.initialLanguage;
+    })();
+  </script>
+  <script defer src="js/script.js"></script>
+  <noscript><style>.i18n-pending body{visibility:visible}</style></noscript>
+  <title>Robert RYAN — Web Designer &amp; Front-End Specialist</title>
+  <script type="application/ld+json" id="person-schema">
+  {"@context":"https://schema.org","@type":"Person","name":"Robert RYAN","jobTitle":"Web Designer","url":"https://oriaingraphics.com/","sameAs":["https://www.linkedin.com/in/oriain-g/"],"knowsAbout":["Web Design","Accessibility","UX Design","Front-End Development","WordPress","Design Systems"]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
+  <p class="sr-only" role="status" aria-live="polite" id="language-status"></p>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Robert RYAN, home" data-i18n-aria-label="a11y.home"><span class="brand-mark" aria-hidden="true">R</span><span>Robert RYAN</span></a>
+    <nav aria-label="Primary navigation" data-i18n-aria-label="a11y.navigation" id="site-nav">
+      <a href="#top" data-i18n="nav.home">Home</a><a href="#about" data-i18n="nav.profile">Profile</a><a href="#expertise" data-i18n="nav.expertise">Expertise</a><a href="#work" data-i18n="nav.projects">Projects</a><a href="#experience" data-i18n="nav.experience">Experience</a>
+    </nav>
+    <div class="header-actions">
+      <div class="language-switcher" role="group" aria-label="Choose language" data-i18n-aria-label="a11y.languageSelector"><button type="button" data-language="fr" lang="fr" aria-label="Afficher le site en français">FR</button><button type="button" data-language="en" lang="en" aria-label="View the website in English">EN</button></div>
+      <button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme" data-i18n-aria-label="a11y.theme" data-i18n-title="a11y.theme"><span aria-hidden="true">◐</span></button>
+      <a class="header-link" href="#contact"><span data-i18n="nav.contact">Contact</span> <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-i18n-aria-label="a11y.menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="kicker"><span class="status-dot" aria-hidden="true"></span><span data-i18n="hero.status">Portfolio refresh in progress</span></p>
+        <h1 id="hero-title" data-i18n="hero.title">I design accessible digital experiences by bringing together creativity, ease of use and front-end expertise.</h1>
+        <p class="hero-lead" data-i18n="hero.intro">A Web Designer and front-end integrator with more than ten years’ experience, I create interfaces, content and digital journeys that meet user needs while respecting production constraints. My work spans visual design, web integration, WordPress, design systems, digital accessibility and digital communication.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="documents/robert-ryan-cv.pdf" download><span data-i18n="actions.cv">Download my CV</span> <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/oriain-g/" target="_blank" rel="noopener noreferrer"><span data-i18n="actions.linkedin">View my LinkedIn profile</span> <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="microcopy" data-i18n="hero.note">Detailed case studies are being prepared and will be published shortly.</p>
+      </div>
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-window">
+          <div class="window-bar"><i></i><i></i><i></i><span data-i18n="art.everyone">Designing for everyone</span></div>
+          <div class="window-body"><div class="art-label" data-i18n="art.accessible">Accessible by default</div><div class="art-title"></div><div class="art-title short"></div><div class="art-copy"></div><div class="art-copy small"></div><div class="art-button"></div></div>
+        </div>
+        <div class="float-pill pill-one">WCAG <b>AA</b></div><div class="float-pill pill-two">UX + UI</div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Core disciplines" data-i18n-aria-label="a11y.disciplines"><div><span data-i18n="skills.accessibility">Digital accessibility</span><i>✦</i><span>Web Design</span><i>✦</i><span data-i18n="skills.frontend">Front-end integration</span><i>✦</i><span>Design Systems</span><i>✦</i><span>WordPress</span><i>✦</i><span data-i18n="skills.communication">Digital communication</span></div></section>
+
+    <section class="section status-section" aria-labelledby="status-title">
+      <div class="status-panel reveal">
+        <div class="status-intro"><p class="eyebrow" data-i18n="status.eyebrow">What’s happening</p><h2 id="status-title" data-i18n="status.title">Portfolio update in progress.</h2><p data-i18n="status.copy">This portfolio is being updated to present recent work as detailed case studies. It will soon include examples of interface design, accessibility improvements, design-system integration, WordPress development and digital content creation. Until then, my CV, LinkedIn profile and contact details remain available here.</p><div class="progress" role="progressbar" aria-label="Portfolio preparation" data-i18n-aria-label="a11y.progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="72"><span></span></div><small data-i18n="status.progress">Selecting, documenting and refining</small></div>
+        <div class="deliverables" aria-label="Upcoming portfolio topics">
+          <article><span aria-hidden="true">◌</span><h3 data-i18n="expertise.accessibility">Digital accessibility</h3></article><article><span aria-hidden="true">◇</span><h3 data-i18n="expertise.cms">WordPress and CMS</h3></article><article><span aria-hidden="true">▦</span><h3>Design Systems</h3></article><article><span aria-hidden="true">↗</span><h3 data-i18n="expertise.ui">Web and UI design</h3></article><article><span aria-hidden="true">&lt;/&gt;</span><h3 data-i18n="expertise.frontend">Front-end integration</h3></article><article><span aria-hidden="true">◎</span><h3 data-i18n="expertise.communication">Digital communication</h3></article><article><span aria-hidden="true">▶</span><h3 data-i18n="expertise.motion">Motion design</h3></article><article><span aria-hidden="true">✦</span><h3 data-i18n="expertise.graphic">Graphic design</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split-section" id="about" aria-labelledby="about-title">
+      <div class="section-label reveal"><p class="eyebrow" data-i18n="profile.eyebrow">01 — Profile</p></div>
+      <div class="about-copy reveal"><h2 id="about-title" data-i18n="profile.title">A profile connecting design with web production</h2><div class="two-columns"><p data-i18n="profile.copy1">My experience allows me to contribute throughout the digital creation process: understanding the brief, visual design, prototyping, front-end integration, CMS publishing and continuous improvement.</p><p data-i18n="profile.copy2">I regularly work with marketing, UX, development, compliance and data teams. This multidisciplinary approach helps me propose solutions that are creative, technically realistic and appropriate for users.</p></div></div>
+    </section>
+
+    <section class="section expertise-section" id="expertise" aria-labelledby="expertise-title">
+      <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="skills.eyebrow">02 — Expertise</p><h2 id="expertise-title" data-i18n="skills.title">A broad toolkit. One coherent approach.</h2></div><p data-i18n="skills.intro">Visual thinking, user experience and technology come together to create considered, practical work.</p></div>
+      <div class="skill-grid reveal">
+        <div class="skill-group"><span>01</span><h3 data-i18n="skillGroups.inclusive">Inclusive design</h3><ul><li data-i18n="skills.accessibility">Digital accessibility</li><li>WCAG</li><li>RGAA</li><li data-i18n="skillItems.responsive">Responsive design</li><li data-i18n="skillItems.ux">User experience</li></ul></div>
+        <div class="skill-group"><span>02</span><h3 data-i18n="skillGroups.frontend">Front-end and CMS</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>WordPress</li><li data-i18n="skillItems.cms">CMS integration</li></ul></div>
+        <div class="skill-group"><span>03</span><h3 data-i18n="skillGroups.visual">Visual design</h3><ul><li>Figma</li><li>Photoshop</li><li>Illustrator</li><li>InDesign</li><li>After Effects</li></ul></div>
+        <div class="skill-group"><span>04</span><h3 data-i18n="skillGroups.direction">Digital production</h3><ul><li>Design Systems</li><li data-i18n="skillItems.ui">Interface design</li><li>Motion design</li><li data-i18n="skillItems.graphic">Graphic design</li><li data-i18n="skillItems.analytics">Analytics</li></ul></div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="experience.eyebrow">03 — Experience</p><h2 id="experience-title" data-i18n="experience.title">Professional experience</h2></div><p data-i18n="experience.intro">A career spanning graphic design, digital communication and accessible web production.</p></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><time data-i18n="experience.present">[Present — Date]</time><div><p class="role-meta">Macif Group · Digital</p><h3 data-i18n="experience.role1">Web Design, Accessibility and Front-End Integration</h3><p data-i18n="experience.copy1">Designing and integrating digital journeys, evolving shared components, supporting accessibility and connecting creative, marketing and technical teams.</p></div></article>
+        <article class="timeline-item reveal"><time data-i18n="experience.dates">[Date — Date]</time><div><p class="role-meta">Mutavie</p><h3 data-i18n="experience.role2">Digital Design and Development</h3><p data-i18n="experience.copy2">Creating responsive interfaces and campaign content across CMS platforms, with close attention to clarity, consistency and continuous improvement.</p></div></article>
+        <article class="timeline-item reveal"><time data-i18n="experience.dates">[Date — Date]</time><div><p class="role-meta" data-i18n="experience.independent">Independent</p><h3 data-i18n="experience.role3">Freelance Graphic Designer</h3><p data-i18n="experience.copy3">Managing creative projects across identity, print, web, illustration and motion design, from the initial discussion through to final production.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading reveal"><div><p class="eyebrow" data-i18n="projects.eyebrow">04 — Coming soon</p><h2 id="work-title" data-i18n="projects.title">Case studies in preparation</h2></div><p data-i18n="projects.intro">The projects published here will explain the initial context, constraints, my role, the approach taken and the solutions delivered.</p></div>
+      <div class="case-grid">
+        <!-- Add future case studies in /projects and duplicate this article structure. -->
+        <article class="case-card reveal"><div class="case-visual visual-a" aria-hidden="true"><div class="score">AA</div><div class="rings"></div></div><div class="case-copy"><span class="badge" data-i18n="projects.status">Case study in preparation</span><h3 data-i18n="projects.card1Title">Improving the accessibility of a customer portal</h3><p data-i18n="projects.card1Copy">Analysing user difficulties, adapting page structure and integrating accessible fixes within an existing technical environment.</p><span class="case-index">01</span></div></article>
+        <article class="case-card reveal"><div class="case-visual visual-b" aria-hidden="true"><div class="wp-grid"><i></i><i></i><i></i><i></i></div></div><div class="case-copy"><span class="badge" data-i18n="projects.status">Case study in preparation</span><h3 data-i18n="projects.card2Title">Modernising a WordPress experience</h3><p data-i18n="projects.card2Copy">Evolving the interface, improving components and bringing the platform closer to a shared design system.</p><span class="case-index">02</span></div></article>
+        <article class="case-card reveal"><div class="case-visual visual-c" aria-hidden="true"><div class="components"><i></i><i></i><i></i><i></i><i></i></div></div><div class="case-copy"><span class="badge" data-i18n="projects.status">Case study in preparation</span><h3 data-i18n="projects.card3Title">Integrating a Design System</h3><p data-i18n="projects.card3Copy">Implementing coherent, reusable and accessible components to improve quality and production efficiency.</p><span class="case-index">03</span></div></article>
+        <article class="case-card reveal"><div class="case-visual visual-d" aria-hidden="true"><div class="path"><i></i><i></i><i></i><i></i></div></div><div class="case-copy"><span class="badge" data-i18n="projects.status">Case study in preparation</span><h3 data-i18n="projects.card4Title">Optimising a digital journey</h3><p data-i18n="projects.card4Copy">Bringing design, development, marketing and data analysis together to simplify a journey and improve its measurement.</p><span class="case-index">04</span></div></article>
+      </div>
+    </section>
+
+    <section class="quote-section reveal" aria-label="Design philosophy" data-i18n-aria-label="a11y.philosophy"><blockquote data-i18n="quote">“The strongest digital work is created when visual design, accessibility and technology support one another.”</blockquote></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="contact-inner reveal"><p class="eyebrow" data-i18n="contact.eyebrow">Would you like to know more?</p><h2 id="contact-title" data-i18n="contact.title">Let’s discuss your projects.</h2><p data-i18n="contact.copy">If you would like to know more about my experience or see work that has not yet been published here, you can contact me directly or view my CV and LinkedIn profile.</p><div class="contact-list"><a href="mailto:advised.dialect-4k@icloud.com"><span>Email</span><strong>advised.dialect-4k@icloud.com</strong><b aria-hidden="true">↗</b></a><a href="https://www.linkedin.com/in/oriain-g/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong data-i18n="contact.profile">View profile</strong><b aria-hidden="true">↗</b></a><a href="documents/robert-ryan-cv.pdf" download><span data-i18n="contact.cvLabel">Curriculum vitae</span><strong data-i18n="actions.cv">Download my CV</strong><b aria-hidden="true">↓</b></a></div></div></section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">R</span><span>Robert RYAN</span></a><p data-i18n="footer.status">Portfolio currently being updated. New case studies will be published shortly.</p><p>© <span id="year"></span> · <span data-i18n="footer.credit">Designed with care</span></p></footer>
+</body>
+</html>
