@@ -1,37 +1,89 @@
-# Robert Ryan — Portfolio in Progress
+# Adaptive Portfolio
 
-A bilingual, framework-free responsive landing page built with semantic HTML, CSS and vanilla JavaScript.
+**Version:** 0.1  
+**Status:** Planning / Exploration
 
-## Preview
+## What this project is
 
-Open `index.html` directly, or serve the folder with any local static server.
+This project is an adaptive portfolio built around one central idea:
 
-## Before publishing
+> **Stable core, adaptive surface.**
 
-- Add the final CV at `documents/robert-ryan-cv.pdf`.
-- Replace `https://your-domain.example/` in the canonical URL, Open Graph URL and Person schema.
-- Add a 1200 × 630 social preview at `assets/social-preview.jpg`.
-- Confirm the email address, LinkedIn URL and timeline dates.
-- Test the deployed URL with Lighthouse and at 200% browser zoom.
+The portfolio should communicate a consistent professional identity while allowing the presentation to adapt to different audiences, opportunities, and job applications.
 
-## Languages
+The goal is not to become a different person for every role. The goal is to make the most relevant parts of the same professional story easier to see.
 
-English and French editorial content is held in the structured `translations` object in `js/script.js`. The selection order is:
+## Why this project exists
 
-1. Explicit `?lang=en` or `?lang=fr` URL
-2. A manually saved preference
-3. Browser preferences from `navigator.languages`
-4. English fallback
+The portfolio has three purposes:
 
-The language control updates the content, document language, URL, metadata and structured data without reloading. New copy should always use a stable `data-i18n` key rather than a sentence as its key.
+1. **Career** — present relevant experience, skills, and evidence clearly for different job opportunities.
+2. **Design** — explore a reusable, accessible, component-based system whose presentation can vary without changing its underlying content.
+3. **Learning** — provide a controlled environment for experimenting with AI, design systems, web architecture, and new technologies.
 
-## Project structure
+Career usefulness comes first. Experimentation should support the portfolio rather than overwhelm it.
 
-- `css/style.css` — design tokens, themes, layout, components and responsive rules
-- `js/script.js` — bilingual content, language selection, theme preference, mobile navigation and progressive reveal behavior
-- `assets/` — global brand and social assets
-- `documents/` — CV and downloadable files
-- `images/` — future project imagery
-- `projects/` — future case-study pages
+## Current working model
 
-The page respects system colour preference by default, stores a manual theme choice locally, and disables non-essential motion when `prefers-reduced-motion` is active.
+The project is expected to evolve around three layers:
+
+### Stable core
+
+Things that should remain consistent:
+
+- professional identity
+- experience and evidence
+- values and ways of working
+- accessibility standards
+- content integrity
+- core design principles
+
+### Adaptive layer
+
+Things that may change deliberately:
+
+- project selection
+- section order
+- highlighted skills
+- level of technical detail
+- introduction and emphasis
+- visual personality
+- tone within defined limits
+
+### Experimental layer
+
+Things that may change frequently:
+
+- frameworks
+- AI workflows
+- hosting
+- animation techniques
+- generation tools
+- Figma / MCP experiments
+- implementation approaches
+
+Experiments should be removable without damaging the portfolio.
+
+## Project documents
+
+- [`docs/principles.md`](docs/principles.md) — the rules used to judge product, design, AI, and technical decisions.
+- [`docs/decision-log.md`](docs/decision-log.md) — records important decisions and why they were made.
+
+More documentation should be added only when there is a real need for it.
+
+## Current phase
+
+The project is currently in the **definition and validation phase**.
+
+Before choosing a framework or building the full site, the next work should focus on:
+
+- validating the core portfolio idea
+- defining what belongs to the stable core
+- defining what may legitimately adapt
+- identifying the primary audiences
+- testing a small chameleon/adaptive prototype
+- separating useful personalisation from unnecessary complexity
+
+## Working rule
+
+> **Do not choose technology simply because it is interesting. Choose it when it helps the portfolio achieve its purpose.**
