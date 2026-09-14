@@ -1,14 +1,16 @@
 # Core Principles
 
-**Version:** 0.1  
+**Version:** 0.2  
 **Status:** Draft  
 **Project:** Adaptive Portfolio
 
 ## Project constitution
 
-> **This is a portfolio with a stable professional core and an adaptive presentation layer, designed to communicate the most relevant parts of my work without changing who I am.**
+> **This is a documented adaptive portfolio system with a stable professional core and an adaptive presentation layer, designed to communicate the most relevant parts of my work without changing who I am.**
 
 The portfolio may evolve technically and visually, but its purpose is to make my professional value easier to understand, not to manufacture a different identity for every opportunity.
+
+The documentation is part of the product. It should explain the system clearly enough that its logic can be understood independently of the current implementation.
 
 ---
 
@@ -29,7 +31,6 @@ Personalisation exists to help a visitor understand why my experience is relevan
 The site should not imitate an employer, copy a company identity, or reshape my professional story so far that it becomes misleading.
 
 **Good adaptation:**
-
 - showing the most relevant projects first
 - highlighting skills mentioned in a role
 - changing the depth of technical information
@@ -37,7 +38,6 @@ The site should not imitate an employer, copy a company identity, or reshape my 
 - adjusting the introduction to emphasise relevant experience
 
 **Poor adaptation:**
-
 - claiming expertise I do not have
 - hiding important contradictions
 - generating a completely different professional persona
@@ -48,7 +48,6 @@ The site should not imitate an employer, copy a company identity, or reshape my 
 ## 3. Evidence before decoration
 
 The strongest part of the portfolio should be the work itself:
-
 - problems solved
 - decisions made
 - responsibilities
@@ -70,15 +69,6 @@ Projects, skills, achievements, case studies, and other evidence should be treat
 
 The system should be able to present the same source material in different ways without duplicating or rewriting it unnecessarily.
 
-This principle should influence future choices around:
-
-- content structure
-- metadata
-- component design
-- routing
-- page generation
-- AI-assisted configuration
-
 ---
 
 ## 5. Accessibility is part of the system
@@ -87,22 +77,32 @@ Accessibility should be designed into the portfolio rather than checked only at 
 
 Adaptation must not reduce accessibility.
 
-All visual personalities and component variants should preserve:
-
-- semantic structure
-- keyboard usability
-- visible focus
-- sufficient contrast
-- understandable hierarchy
-- accessible forms and error handling
-- appropriate motion and reduced-motion behaviour
-- clear interaction states
+All visual personalities and component variants should preserve semantic structure, keyboard usability, visible focus, sufficient contrast, understandable hierarchy, accessible forms, appropriate motion, reduced-motion behaviour, and clear interaction states.
 
 A more expressive design mode is not permission to weaken accessibility.
 
 ---
 
-## 6. Technology serves the portfolio
+## 6. Documentation is part of the product
+
+Important design, architectural, accessibility, AI, and adaptation decisions should be documented clearly enough that the system can be understood independently of its code.
+
+The documentation should explain:
+- why the system exists
+- how the stable core is defined
+- what may adapt
+- how decisions are evaluated
+- how components and patterns are expected to behave
+- what was tested and learned
+- why technologies were chosen or rejected
+
+The code should implement and validate the documented system rather than becoming the only source of truth.
+
+> **Documentation defines the system. Code proves and implements the system.**
+
+---
+
+## 7. Technology serves the documented system
 
 Frameworks, hosting platforms, AI tools, and development techniques are implementation choices.
 
@@ -110,37 +110,29 @@ They are not the identity of the project.
 
 React, Next.js, Astro, vanilla JavaScript, ChatGPT Sites, or future tools may be explored, adopted, replaced, or removed.
 
-The content model and core principles should survive those changes.
-
-**Rule:** do not lock an important project concept to a technology unless there is a strong reason.
+The content model, principles, and documented system should survive those changes.
 
 ---
 
-## 7. Experimentation must be reversible
+## 8. Experimentation must be reversible
 
 The portfolio is also a learning environment.
 
 Experimentation with AI, design systems, animation, architecture, and new tools is encouraged, but experiments should be isolated enough that they can fail or be removed without damaging the useful portfolio.
 
-Where possible:
-
-> **experiments should fail safely.**
-
-A failed AI feature should not break the site.  
-A framework change should not destroy the content.  
-A discarded visual personality should not require rebuilding every project.
+> **Experiments should fail safely.**
 
 ---
 
-## 8. Complexity must earn its place
+## 9. Complexity must earn its place
 
 Every meaningful feature should solve at least one clear problem:
-
 - improve understanding
 - improve relevance
 - improve accessibility
 - improve maintainability
 - improve the authoring workflow
+- improve the documentation
 - produce worthwhile learning
 
 "Because it is possible" is not sufficient justification.
@@ -151,8 +143,7 @@ Prefer the simplest implementation that preserves the important idea.
 
 # Adaptation boundaries
 
-The adaptive layer is expected to be allowed to change things such as:
-
+The adaptive layer may change:
 - ordering of sections
 - project selection
 - highlighted skills
@@ -164,7 +155,6 @@ The adaptive layer is expected to be allowed to change things such as:
 - motion and presentation intensity within accessible limits
 
 The adaptive layer should **not** change:
-
 - factual career history
 - actual responsibilities
 - qualifications
@@ -173,53 +163,18 @@ The adaptive layer should **not** change:
 - fundamental professional identity
 - accessibility expectations
 
-These boundaries are provisional and should be refined as the project develops.
-
 ---
 
 # The three-layer model
 
 ## Layer 1 — Stable core
-
-Changes slowly.
-
-Examples:
-
-- professional identity
-- core experience
-- evidence
-- values
-- accessibility requirements
-- content model
-- these principles
+Changes slowly: professional identity, core experience, evidence, values, accessibility requirements, content model, governing principles, core documentation.
 
 ## Layer 2 — Adaptive system
-
-Changes deliberately for a particular audience or opportunity.
-
-Examples:
-
-- content priority
-- section order
-- selected projects
-- information depth
-- visual personality
-- targeted introduction
+Changes deliberately for a particular audience or opportunity: content priority, section order, selected projects, information depth, visual personality, targeted introduction.
 
 ## Layer 3 — Experimental layer
-
-Can change rapidly.
-
-Examples:
-
-- React / Next.js / Astro experiments
-- ChatGPT Sites
-- AI matching
-- Figma / MCP
-- generated configurations
-- animation experiments
-- alternative hosting
-- prototype interaction ideas
+Can change rapidly: frameworks, ChatGPT Sites, AI matching, Figma / MCP, generated configurations, animation experiments, alternative hosting, prototype ideas.
 
 An experiment should not automatically become architecture.
 
@@ -234,23 +189,23 @@ When proposing a new feature, design change, AI workflow, or technical choice, a
 3. **Authenticity** — Does it represent my real experience accurately?
 4. **Content** — Does it preserve reusable, independent source content?
 5. **Accessibility** — Does it remain accessible across adaptive states?
-6. **Replaceability** — Can the project survive if this technology or feature is removed?
-7. **Complexity** — Is the benefit worth the extra complexity?
-8. **Learning** — If the main value is experimentation, can it remain safely in the experimental layer?
+6. **Documentation** — Can the concept and decision be understood without reading the code?
+7. **Replaceability** — Can the project survive if this technology or feature is removed?
+8. **Complexity** — Is the benefit worth the extra complexity?
+9. **Learning** — If the main value is experimentation, can it remain safely in the experimental layer?
 
 ### Decision outcomes
-
-- **Adopt** — clearly supports the principles.
-- **Prototype** — potentially useful, but evidence is still needed.
-- **Experiment only** — useful for learning but not justified as part of the product.
-- **Park** — interesting, but currently adds more complexity than value.
-- **Reject** — conflicts with the core principles.
+- **Adopt**
+- **Prototype**
+- **Experiment only**
+- **Park**
+- **Reject**
 
 ---
 
 # Primary decision rule
 
-> **Does this strengthen the core, improve useful adaptation, or enable worthwhile learning without weakening clarity, authenticity, accessibility, or maintainability?**
+> **Does this strengthen the core, improve useful adaptation, improve the documented system, or enable worthwhile learning without weakening clarity, authenticity, accessibility, or maintainability?**
 
 If the answer is unclear, keep the idea in the experimental layer until it proves its value.
 
@@ -258,16 +213,12 @@ If the answer is unclear, keep the idea in the experimental layer until it prove
 
 # Change history
 
+## v0.2
+- Reframed the project as a documented adaptive portfolio system.
+- Added documentation as an explicit core principle.
+- Changed the technology principle so technology serves the documented system.
+- Added documentation clarity to the decision test.
+- Clarified that implementation is proof of the system rather than the sole product.
+
 ## v0.1
-
-Initial principles created around the concept of:
-
-> **Stable core, adaptive surface.**
-
-Areas still requiring further definition:
-
-- exact professional core
-- primary audiences
-- acceptable limits of personalisation
-- visual personality model
-- initial proof-of-concept scope
+- Initial stable core / adaptive surface principles.
