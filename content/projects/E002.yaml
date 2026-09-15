@@ -1,0 +1,173 @@
+id: E002
+title: Analytics reporting for a non-analyst contributor
+slug: analytics-reporting-non-analyst-contributor
+status: implemented
+
+summary_short: >
+  A non-analyst contributor needed understandable reporting for a FAQ module
+  of roughly 90 questions across three sites. I defined the reporting need
+  with the data analyst and final user, then implemented the Piano Analytics
+  API integration through Google Apps Script and the Google Sheets reporting
+  layer with adjustable dates, consolidating reporting from all three sites.
+  The workflow is implemented and evolving;
+  measured user impact remains pending.
+summary_standard: >
+  The project connected Piano Analytics through its API to Google Apps Script
+  and Google Sheets to make FAQ reporting understandable to a non-analyst
+  contributor. I worked with the data analyst and final user to define the
+  reporting need. I implemented the API integration through Google Apps Script,
+  consolidated reporting from three sites, and implemented the Google Sheets
+  reporting layer with adjustable dates in the user's preferred environment.
+  Time savings,
+  adoption, and measured changes in reporting usability remain pending.
+summary_deep: >
+  The documented data flow is Piano Analytics to API to Google Apps Script
+  to Google Sheets. The FAQ module contained roughly 90 questions across
+  three sites. I implemented the API integration through Google Apps Script
+  and the Google Sheets reporting layer with adjustable dates, consolidating
+  reporting from the three sites. The workflow included a simplified dashboard.
+  The reporting need was defined with the data analyst and final user.
+  Specific API queries, automation scheduling, data transformations, and
+  dashboard measures remain pending.
+
+domains:
+  - analytics
+  - ux
+  - automation
+  - data-translation
+  - collaboration
+context:
+  summary: Reporting for a FAQ module of roughly 90 questions across three sites.
+problem:
+  summary: The non-analyst contributor needed understandable FAQ reporting.
+constraints:
+  - Reporting needed to suit a non-analyst user and their preferred environment.
+  - The FAQ reporting scope covered three sites.
+role:
+  summary: >
+    I worked with the data analyst and final user to define the reporting need.
+    I implemented the Piano Analytics API integration through Google Apps
+    Script, consolidated reporting from three sites, and implemented the
+    Google Sheets reporting layer with adjustable dates.
+collaborators:
+  - Data analyst
+  - Developer
+  - Final user
+approach:
+  summary: >
+    Define the reporting need with the data analyst and final user, implement
+    the Piano Analytics API integration through Google Apps Script, consolidate
+    reporting from three sites, and implement the Google Sheets reporting
+    layer with adjustable dates in the contributor's preferred environment.
+outcome:
+  summary: >
+    A reusable reporting workflow was implemented for the three-site FAQ
+    scope and continues to evolve. Measured user impact, adoption, and time
+    savings are pending.
+
+capabilities:
+  - cross-disciplinary-problem-solving
+  - translation-of-complexity
+  - systems-thinking
+  - reusable-systems
+  - design-to-implementation
+audience_relevance:
+  recruiter:
+    priority: high
+    angle: Translating data into a practical reporting tool through collaboration.
+    depth: summary
+  accessibility-lead:
+    priority: low
+    angle: Supporting evidence of translation and collaboration; accessibility validation is pending.
+    depth: standard
+  design-technical-lead:
+    priority: medium
+    angle: Reusable data flow and adaptation to the final user's needs.
+    depth: standard
+tags:
+  - analytics
+  - data
+  - automation
+  - multi-site
+  - reusable-systems
+  - collaboration
+
+evidence_items:
+  - id: EV-E002-01
+    project: E002
+    type: collaboration
+    statement: >
+      Worked with the data analyst and final user to define the reporting need
+      for a non-analyst contributor.
+    supports:
+      - cross-disciplinary-problem-solving
+      - translation-of-complexity
+    audiences:
+      - recruiter
+      - design-technical-lead
+    confidence: confirmed
+  - id: EV-E002-02
+    project: E002
+    type: implementation
+    statement: >
+      Implemented the Piano Analytics API integration through Google Apps Script
+      and consolidated reporting from three sites for a FAQ module of roughly
+      90 questions.
+    supports:
+      - systems-thinking
+      - reusable-systems
+    audiences:
+      - design-technical-lead
+    confidence: confirmed
+  - id: EV-E002-03
+    project: E002
+    type: implementation
+    statement: >
+      Implemented the Google Sheets reporting layer with adjustable dates,
+      translating the reporting need defined with the data analyst and final
+      user into a working tool in the user's preferred environment.
+    supports:
+      - translation-of-complexity
+      - reusable-systems
+      - design-to-implementation
+    audiences:
+      - recruiter
+      - design-technical-lead
+    confidence: confirmed
+
+outcomes:
+  - id: OUT-E002-01
+    project: E002
+    statement: >
+      A reporting workflow with adjustable dates and a simplified dashboard
+      was implemented for the three-site FAQ scope.
+    type: delivery
+    status: confirmed
+  - id: OUT-E002-02
+    project: E002
+    statement: "Pending: measured time savings from the reporting workflow."
+    type: efficiency
+    status: pending
+  - id: OUT-E002-03
+    project: E002
+    statement: "Pending: adoption evidence for the implemented workflow."
+    type: adoption
+    status: pending
+  - id: OUT-E002-04
+    project: E002
+    statement: "Pending: measured changes in reporting usability and user impact."
+    type: user-impact
+    status: pending
+
+public_notes: >
+  Project-summary source for the initial conversion:
+  docs/evidence-map.md, E002. This is provenance for this conversion, not a
+  permanent source-of-truth rule. Role and implementation wording also
+  incorporates the project owner's clarifications in this conversation.
+  Confirmed means explicitly recorded in the source or those clarifications,
+  not independently verified. Audience relevance is editorial
+  interpretation of the documented work. The question count is approximate;
+  question and site counts describe scope, not impact. Pending: project dates,
+  detailed API and automation behaviour, dashboard measures, measured outcomes, accessibility validation,
+  stakeholder feedback, supporting artefacts, and confidentiality/publication
+  classification.

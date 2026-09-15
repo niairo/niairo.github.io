@@ -1,0 +1,157 @@
+id: E001
+title: Accessibility remediation on ExoPlatform
+slug: accessibility-remediation-exoplatform
+status: in-progress
+
+summary_short: >
+  Accessibility remediation on ExoPlatform required changes to the underlying
+  platform as well as the interface. I investigated the implementation route
+  and supplied accessibility and technical guidance that enabled developers
+  to complete initially blocked or partially implementable work.
+  The planned remediation tickets were implemented; formal reassessment is pending.
+summary_standard: >
+  Accessibility issues involved navigation, colour consistency, templates,
+  site structure, and environment-specific deployment. I investigated the
+  ExoPlatform implementation route, documented Jira tickets, and supplied
+  developers with accessibility and technical guidance to complete work that
+  was initially blocked or only partially implementable. Implementation was
+  collaborative across development, technical, delivery, and environment teams.
+  The formal before/after accessibility outcome remains pending.
+summary_deep: >
+  The work extended beyond front-end fixes into Groovy templates, ExoPlatform
+  template structure, site structure, and environment-specific deployment.
+  My contribution included investigating the implementation route, supplying
+  accessibility and technical guidance to unblock developers, documenting
+  Jira tickets, and collaborating across implementation and delivery teams.
+  Specific
+  remediation examples, deployment steps, and assessment results are pending.
+
+domains:
+  - accessibility
+  - legacy-platform
+  - implementation
+  - documentation
+  - cross-team-delivery
+context:
+  summary: Accessibility remediation within an ExoPlatform legacy platform.
+problem:
+  summary: >
+    Accessibility issues required changes to navigation, colour consistency,
+    templates, and platform structure beyond front-end fixes.
+constraints:
+  - Legacy platform and Groovy template structure.
+  - Environment-specific deployment requirements.
+role:
+  summary: >
+    I investigated the ExoPlatform implementation route and supplied developers
+    with the accessibility and technical guidance needed to complete work
+    that was initially blocked or only partially implementable. I documented
+    Jira tickets and collaborated with development, technical, delivery, and
+    environment teams through implementation.
+collaborators:
+  - Development teams
+  - Technical teams
+  - Delivery teams
+  - Environment teams
+approach:
+  summary: >
+    Investigate the ExoPlatform implementation route, supply accessibility and
+    technical guidance to unblock developers, document Jira tickets, and
+    collaborate across teams through implementation of the planned remediation.
+outcome:
+  summary: >
+    The planned remediation tickets were implemented. Formal before/after
+    accessibility reassessment remains pending.
+
+capabilities:
+  - cross-disciplinary-problem-solving
+  - translation-of-complexity
+  - systems-thinking
+  - accessibility
+  - design-to-implementation
+  - documentation
+audience_relevance:
+  recruiter:
+    priority: high
+    angle: Cross-team problem solving and delivery of planned remediation.
+    depth: summary
+  accessibility-lead:
+    priority: very-high
+    angle: Remediation, implementation guidance, and pending formal reassessment.
+    depth: deep
+  design-technical-lead:
+    priority: high
+    angle: Platform investigation and translation of requirements into implementation.
+    depth: standard
+tags:
+  - accessibility
+  - legacy-platform
+  - technical-investigation
+  - documentation
+  - collaboration
+
+evidence_items:
+  - id: EV-E001-01
+    project: E001
+    type: implementation
+    statement: >
+      Investigated the ExoPlatform implementation route for remediation involving
+      navigation, colour consistency, Groovy templates, and site structure.
+    supports:
+      - systems-thinking
+      - accessibility
+    audiences:
+      - accessibility-lead
+      - design-technical-lead
+    confidence: confirmed
+  - id: EV-E001-02
+    project: E001
+    type: documentation
+    statement: >
+      Supplied developers with accessibility and technical guidance needed to
+      complete work that was initially blocked or only partially implementable,
+      and documented Jira tickets.
+    supports:
+      - translation-of-complexity
+      - documentation
+      - design-to-implementation
+    audiences:
+      - accessibility-lead
+      - design-technical-lead
+    confidence: confirmed
+  - id: EV-E001-03
+    project: E001
+    type: collaboration
+    statement: >
+      Worked with development, technical, delivery, and environment teams
+      until the planned remediation tickets were implemented.
+    supports:
+      - cross-disciplinary-problem-solving
+    audiences:
+      - recruiter
+      - accessibility-lead
+      - design-technical-lead
+    confidence: confirmed
+
+outcomes:
+  - id: OUT-E001-01
+    project: E001
+    statement: The planned remediation tickets were implemented.
+    type: delivery
+    status: confirmed
+  - id: OUT-E001-02
+    project: E001
+    statement: "Pending: formal before/after accessibility reassessment and measured results."
+    type: accessibility
+    status: pending
+
+public_notes: >
+  Project-summary source for the initial conversion:
+  docs/evidence-map.md, E001. This is provenance for this conversion, not a
+  permanent source-of-truth rule. Role and implementation wording also
+  incorporates the project owner's clarifications in this conversation.
+  Confirmed means explicitly recorded in the source or those clarifications,
+  not independently verified. Audience relevance is editorial
+  interpretation of the documented work. Pending: project dates, specific
+  remediation and deployment details, assessment results, supporting
+  artefacts, stakeholder feedback, and confidentiality/publication classification.

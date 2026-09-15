@@ -1,0 +1,184 @@
+id: E003
+title: Rapid assurance-vie simulator
+slug: rapid-assurance-vie-simulator
+status: live
+
+summary_short: >
+  A marketing campaign needed a savings simulator, but the normal development
+  route was too slow. I took end-to-end responsibility for finding and
+  implementing the viable technical route from UX concept to production
+  within the campaign deadline, alongside contributions from other teams.
+  The application
+  remained useful and helped justify a more durable implementation;
+  quantitative validation remains pending.
+summary_standard: >
+  The campaign deadline required an alternative route from UX exploration
+  to production delivery. I took end-to-end responsibility for finding and
+  implementing that technical route within the deadline. My implementation
+  covered simulator architecture, calculation logic, data storage, PDF
+  generation, contact and consent handling, marketing integration, and Piano
+  Analytics tracking. Other teams also contributed to the wider project. The
+  application launched in time and helped justify a more durable
+  implementation. Completion of that long-term implementation and measured
+  business impact remain pending.
+summary_deep: >
+  I found and implemented the viable technical route from UX concept to
+  production within the campaign deadline. My implementation covered the
+  simulator architecture, calculation logic, data storage, PDF generation,
+  contact and consent handling, marketing integration, and Piano Analytics
+  tracking. The wider project also involved contributions from other teams.
+  The evidence map describes
+  the project as live and validated, moving toward long-term implementation,
+  and identifies analytics-backed validation as a demonstrated pattern.
+  Validation methods and results, specific architecture technology choices,
+  and details of other teams' contributions remain pending. This case
+  supports prototyping as a path toward durable investment, an emerging
+  pattern in the system model.
+
+domains:
+  - ux
+  - product
+  - architecture
+  - development
+  - analytics
+  - marketing
+context:
+  summary: A marketing campaign required an assurance-vie savings simulator.
+problem:
+  summary: The normal development route was too slow for the campaign's needs.
+constraints:
+  - Delivery needed to meet the marketing campaign timing.
+  - The normal development route could not meet that timing.
+role:
+  summary: >
+    I took end-to-end responsibility for finding and implementing the viable
+    technical route from UX concept to production within the campaign deadline.
+    My implementation covered simulator architecture, calculation logic, data
+    storage, PDF generation, contact and consent handling, marketing integration,
+    and Piano Analytics tracking. Other teams contributed to the wider project;
+    details of those contributions remain pending.
+approach:
+  summary: >
+    Find and implement a viable technical route from UX concept to production
+    within the campaign deadline, covering simulator architecture, calculation
+    logic, data storage, PDF generation, contact and consent handling, marketing
+    integration, and Piano Analytics tracking within the wider team effort.
+outcome:
+  summary: >
+    The simulator launched in time for the campaign, remained useful, and
+    helped justify a more durable implementation. Quantitative validation
+    and completion of the long-term implementation are pending.
+
+capabilities:
+  - cross-disciplinary-problem-solving
+  - translation-of-complexity
+  - systems-thinking
+  - design-to-implementation
+audience_relevance:
+  recruiter:
+    priority: high
+    angle: End-to-end technical responsibility and campaign-time delivery across disciplines.
+    depth: summary
+  accessibility-lead:
+    priority: low
+    angle: Supporting implementation context; accessibility validation is pending.
+    depth: standard
+  design-technical-lead:
+    priority: high
+    angle: Technical route and implementation from UX concept to production under deadline.
+    depth: standard
+tags:
+  - ux
+  - architecture
+  - analytics
+  - marketing
+  - constrained-deadline
+  - prototyping
+  - production
+  - delivery
+
+evidence_items:
+  - id: EV-E003-01
+    project: E003
+    type: implementation
+    statement: >
+      Took end-to-end responsibility for finding and implementing the viable
+      technical route from UX concept to production within the campaign
+      deadline, alongside other teams' contributions to the wider project.
+    supports:
+      - cross-disciplinary-problem-solving
+      - translation-of-complexity
+      - design-to-implementation
+    audiences:
+      - recruiter
+      - design-technical-lead
+    confidence: confirmed
+  - id: EV-E003-02
+    project: E003
+    type: implementation
+    statement: >
+      Implemented the simulator architecture, calculation logic, data storage,
+      PDF generation, contact and consent handling, marketing integration,
+      and Piano Analytics tracking.
+    supports:
+      - systems-thinking
+      - cross-disciplinary-problem-solving
+    audiences:
+      - design-technical-lead
+    confidence: confirmed
+  - id: EV-E003-03
+    project: E003
+    type: delivery
+    statement: >
+      The application launched in time for the marketing campaign, remained
+      useful, and helped justify a more durable implementation.
+    supports:
+      - design-to-implementation
+      - cross-disciplinary-problem-solving
+    audiences:
+      - recruiter
+      - design-technical-lead
+    confidence: confirmed
+
+outcomes:
+  - id: OUT-E003-01
+    project: E003
+    statement: The simulator launched in time for the marketing campaign.
+    type: delivery
+    status: confirmed
+  - id: OUT-E003-02
+    project: E003
+    statement: >
+      The application remained useful and helped justify a more durable
+      implementation, as qualitatively reported in the current source.
+    type: validation
+    status: confirmed
+  - id: OUT-E003-03
+    project: E003
+    statement: "Pending: validation methods and quantitative results supporting the reported usefulness."
+    type: validation
+    status: pending
+  - id: OUT-E003-04
+    project: E003
+    statement: "Pending: measured business impact of the simulator."
+    type: business-impact
+    status: pending
+  - id: OUT-E003-05
+    project: E003
+    statement: "Pending: confirmation of completion of the long-term implementation."
+    type: delivery
+    status: pending
+
+public_notes: >
+  Project-summary source for the initial conversion:
+  docs/evidence-map.md, E003. This is provenance for this conversion, not a
+  permanent source-of-truth rule. Role and implementation wording also
+  incorporates the project owner's clarifications in this conversation.
+  Confirmed means explicitly recorded in the source or those clarifications,
+  not independently verified. Audience relevance is editorial
+  interpretation of the documented work. Rapid prototyping remains an
+  emerging pattern under docs/system-model.md, not an established core
+  capability. Pending: project dates, details of other teams' contributions,
+  specific architecture technology choices, validation methods and quantitative results, measured business impact,
+  long-term implementation completion, accessibility validation, supporting
+  artefacts, stakeholder feedback, and confidentiality/publication classification.
