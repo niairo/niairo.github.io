@@ -1,0 +1,25 @@
+capabilities:
+  - id: cross-disciplinary-problem-solving
+    label: Cross-disciplinary problem solving
+    description: Connect people and disciplines to solve complex digital problems.
+  - id: translation-of-complexity
+    label: Translation of complexity
+    description: Translate specialist complexity into practical tools and guidance.
+  - id: systems-thinking
+    label: Systems thinking
+    description: Understand how interfaces, platforms, data flows, and implementation fit together.
+  - id: accessibility
+    label: Accessibility
+    description: Investigate accessibility issues and guide their implementation.
+  - id: design-to-implementation
+    label: Design to implementation
+    description: Connect user needs and design intent with technical implementation.
+  - id: reusable-systems
+    label: Reusable systems
+    description: Develop repeatable solutions that can serve more than one isolated need.
+  - id: documentation
+    label: Documentation
+    description: Record implementation guidance and transfer knowledge between teams.
+  - id: technical-investigation
+    label: Technical investigation
+    description: Investigate underlying platform structures and viable implementation routes.

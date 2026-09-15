@@ -1,0 +1,32 @@
+intros:
+  - id: default-professional-intro
+    status: approved
+    text: >
+      I work across design, implementation, accessibility, data, and digital
+      systems to understand complex problems, connect the people and
+      disciplines involved, and translate complexity into practical,
+      reusable solutions.
+  - id: recruiter-intro
+    status: approved
+    text: >
+      I connect design, technical implementation, accessibility, and data
+      to deliver practical digital solutions. My work includes accessibility
+      remediation guidance, a reusable reporting workflow across three sites,
+      and taking a savings simulator from UX concept to production within
+      a campaign deadline alongside contributions from other teams.
+  - id: accessibility-lead-intro
+    status: approved
+    text: >
+      I investigate accessibility issues beyond the interface and translate
+      requirements into practical implementation guidance. On ExoPlatform,
+      I investigated the technical route, documented Jira tickets, and
+      supported developers through implementation of the planned remediation.
+      Formal accessibility reassessment remains pending.
+  - id: design-technical-lead-intro
+    status: approved
+    text: >
+      I connect design intent with implementation by investigating underlying
+      systems and finding practical technical routes. My work spans platform
+      remediation guidance, reusable analytics reporting, and implementing
+      a savings simulator from UX concept to production within a wider
+      team effort.

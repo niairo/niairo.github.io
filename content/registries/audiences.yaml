@@ -1,0 +1,13 @@
+audiences:
+  - id: general
+    label: General audience
+    description: Visitors seeking a broad professional overview.
+  - id: recruiter
+    label: Recruiter / HR
+    description: Readers assessing role relevance, experience, and delivery.
+  - id: accessibility-lead
+    label: Accessibility lead
+    description: Readers assessing accessibility expertise and implementation guidance.
+  - id: design-technical-lead
+    label: Design / technical lead
+    description: Readers assessing systems thinking and design-to-implementation work.
